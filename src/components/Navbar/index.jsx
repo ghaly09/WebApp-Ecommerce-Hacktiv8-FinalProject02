@@ -36,7 +36,7 @@ export default function NavbarComponent() {
             <>
               <Navlink item="Home" href="/" isMobile />
               <Navlink item="Shop" href="shop" isMobile />
-              <Navlink item="Calaboration" href="/calaboration" isMobile />
+
               <Navlink item="Checkout" href="/checkout" isMobile />
             </>
           )}
@@ -56,7 +56,6 @@ export default function NavbarComponent() {
         <div className="navbar-center hidden lg:flex dark:text-slate-300 text-slate-300">
           <Navlink item="Home" href="/" />
           <Navlink item="Shop" href="/shop" />
-          <Navlink item="Calaboration" href="/calaboration" />
           <Navlink item="Checkout" href="/checkout" />
         </div>
       )}
