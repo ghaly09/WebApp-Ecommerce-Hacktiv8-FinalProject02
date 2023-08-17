@@ -54,11 +54,11 @@ export default function Login() {
 
   return (
     <div className="hero min-h-screen">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="text-center lg:text-left">
+      <div className="hero-content flex-col">
+        <div className="text-center">
           <h1 className="text-5xl font-bold">
-            Login to{" "}
-            <span className="flex pt-3">
+            Login{" "}
+            <span className="flex justify-center pt-3">
               <i className="fa-solid fa-bag-shopping pr-2 text-purple-600"></i>{" "}
               JAJAN.id
             </span>

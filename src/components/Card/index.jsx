@@ -19,7 +19,7 @@ export default function Card({ type }) {
       ) : (
         <></>
       )}
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         <SkeletonCard />
         {type === "shop"
           ? data?.map((item, index) => {

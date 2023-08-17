@@ -15,7 +15,7 @@ export default function Home() {
   }, [dispatch]);
 
   return (
-    <section className="container mx-auto max-w-[1000px] mt-5">
+    <section className="container mx-auto max-w-[1000px] mt-5 px-3">
       <Navbar />
       {token && role === "admin" ? (
         <DashboardInfo />

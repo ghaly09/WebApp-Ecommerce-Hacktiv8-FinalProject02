@@ -5,6 +5,11 @@ import { useSelector } from "react-redux";
 
 export default function NavbarComponent() {
   const { token, role } = useSelector((state) => state.users);
+  const link = [
+    { item: "Home", href: "/" },
+    { item: "Shop", href: "/shop" },
+    { item: "Checkout", href: "/checkout" },
+  ];
 
   return (
     <nav className="navbar bg-[rgb(42,48,60)] p-0 flex items-center justify-center sticky top-0 z-30 md:h-[60px] h-[110px] w-full">
@@ -34,10 +39,7 @@ export default function NavbarComponent() {
             </>
           ) : (
             <>
-              <Navlink item="Home" href="/" isMobile />
-              <Navlink item="Shop" href="shop" isMobile />
-
-              <Navlink item="Checkout" href="/checkout" isMobile />
+              <Navlink link={link} isMobile />
             </>
           )}
         </div>
